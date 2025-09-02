@@ -77,5 +77,3 @@ Outputs: **PSNR vs Compression Ratio graph**
   * **Medavarapu Atchutha Rama Murthy** – 21EC39016
   * **Banisetty Hema Sai Sagar** – 21EC39038
 
-```
-```
