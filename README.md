@@ -8,12 +8,12 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 This project implements a **modified JPEG compression pipeline**. Along with the standard JPEG stages, a **truncation step** is added that discards a fixed number of **high-frequency DCT coefficients**. This improves the **compression ratio** by creating sparser data while preserving the **visual quality** of images.
 
 ---
 
-## 🔑 Pipeline Stages
+## Pipeline Stages
 1. **Color Space Conversion (RGB → YCbCr)**
 2. **Chrominance Subsampling (Cb, Cr downsampling)**
 3. **Block-wise DCT (8×8 blocks)**
@@ -24,7 +24,7 @@ This project implements a **modified JPEG compression pipeline**. Along with the
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 Install dependencies:
 ```bash
 pip install opencv-python matplotlib numpy
@@ -32,7 +32,7 @@ pip install opencv-python matplotlib numpy
 
 -----
 
-## ▶️ Usage
+## Usage
 
 ### Single Image
 
@@ -42,7 +42,7 @@ python jpeg_truncation.py
 
 You will be prompted for the image path, block size (e.g., 8), number of retained coefficients, and color/grayscale option.
 
-➡️ Outputs: Original vs Compressed image + Compression ratio + PSNR
+Outputs: Original vs Compressed image + Compression ratio + PSNR
 
 ### Folder of Images
 
@@ -52,11 +52,11 @@ python jpeg_truncation.py
 
 Enter a folder path and image type (color/grayscale).
 
-➡️ Outputs: **PSNR vs Compression Ratio graph**
+Outputs: **PSNR vs Compression Ratio graph**
 
 -----
 
-## 📊 Results
+## Results
 
   * **Compression Ratio** examples: **8.3, 28.7, 39, 41**
   * Quality is measured using **PSNR**.
@@ -64,7 +64,7 @@ Enter a folder path and image type (color/grayscale).
 
 -----
 
-## 📌 Notes
+## Notes
 
   * Supports both **color** and **grayscale** images.
   * Only works for **8-bit images** (JPEG limitation).
@@ -72,7 +72,7 @@ Enter a folder path and image type (color/grayscale).
 
 -----
 
-## 👨‍💻 Authors
+## Authors
 
   * **Medavarapu Atchutha Rama Murthy** – 21EC39016
   * **Banisetty Hema Sai Sagar** – 21EC39038
